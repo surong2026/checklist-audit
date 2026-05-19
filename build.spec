@@ -1,11 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
 """PyInstaller spec for ChecklistAudit — Windows onedir build."""
 
+import os
 import sys
 from pathlib import Path
 from PyInstaller.utils.hooks import collect_all
 
-base = Path(__file__).parent.absolute()
+# SPECPATH is provided by PyInstaller — points to the directory containing the .spec file
+base = Path(SPECPATH).absolute()
 
 # Collect streamlit templates, static files, and all sub-modules
 streamlit_datas, streamlit_binaries, streamlit_hiddenimports = collect_all("streamlit")
