@@ -28,7 +28,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller build.spec --noconfirm --clean
+          python -m PyInstaller build.spec --noconfirm --clean
 
       - name: Create ZIP archive
         shell: powershell
