@@ -50,6 +50,9 @@ hiddenimports = [
     "docx.opc",
     "docx.oxml",
     "xml.etree.ElementTree",
+    "xlrd",
+    "olefile",
+    "pdfplumber",
 ]
 hiddenimports.extend(streamlit_hiddenimports)
 
